@@ -1,0 +1,303 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #0b0611;
+    color: #ffffff;
+    font-family: var(--font-sans);
+  }
+  body {
+    background-color: #0b0611;
+    color: #e5e7eb;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* Mangled class names starting with x4v7- */
+  .x4v7-topbanner {
+    background: linear-gradient(90deg, #ff1493 0%, #ff2a85 50%, #e60067 100%);
+    color: #ffffff;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    padding: 0.45rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    letter-spacing: 0.01em;
+  }
+
+  .x4v7-topbar {
+    background-color: #0e0716;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .x4v7-header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .x4v7-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #ffffff;
+  }
+
+  .x4v7-nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #d1d5db;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.35rem 0.6rem;
+    border-radius: 0.375rem;
+    transition: color 0.15s ease, background-color 0.15s ease;
+  }
+  .x4v7-nav-link:hover {
+    color: #ff2a85;
+    background-color: rgba(255, 255, 255, 0.04);
+  }
+
+  .x4v7-btn-login {
+    background-color: #1e1329;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 0.45rem 1.1rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .x4v7-btn-login:hover {
+    background-color: #2b1c3c;
+    border-color: rgba(255, 20, 147, 0.4);
+  }
+
+  .x4v7-btn-reg {
+    background: linear-gradient(90deg, #ff1493 0%, #e60067 100%);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 0.45rem 1.25rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(255, 20, 147, 0.45);
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .x4v7-btn-reg:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(255, 20, 147, 0.6);
+  }
+
+  .x4v7-hero-card {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #140b1e;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+  }
+
+  .x4v7-hero-cta {
+    background: linear-gradient(90deg, #ff1493 0%, #e60067 100%);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 0.8rem 2.2rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(255, 20, 147, 0.6);
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .x4v7-hero-cta:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 26px rgba(255, 20, 147, 0.8);
+  }
+
+  .x4v7-payouts-panel {
+    background-color: #11091a;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 0.875rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .x4v7-payout-chip {
+    background-color: #1a0f26;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 0.625rem;
+    padding: 0.65rem 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    min-width: 175px;
+  }
+  .x4v7-payout-chip:hover {
+    border-color: rgba(255, 20, 147, 0.35);
+    background-color: #241436;
+    transform: translateY(-1px);
+  }
+
+  /* SEO content block styling */
+  .x4v7-seo-container {
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(180deg, #130a1e 0%, #0d0615 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  .x4v7-seo-h2 {
+    color: #ff3399;
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .x4v7-seo-h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1.1em;
+    background: #ff1493;
+    border-radius: 2px;
+  }
+
+  .x4v7-seo-p {
+    color: #c7cbd3;
+    font-size: 0.9625rem;
+    line-height: 1.68;
+    margin-bottom: 1.25rem;
+  }
+
+  .x4v7-keyword-tag {
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 1px dotted rgba(255, 20, 147, 0.5);
+  }
+
+  .x4v7-footer {
+    background-color: #0a0410;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 2.5rem 1rem 3rem;
+  }
+
+  .x4v7-hashtag {
+    display: inline-block;
+    color: #9ca3af;
+    background-color: #170d24;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.35rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8125rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  .x4v7-hashtag:hover {
+    color: #ff2a85;
+    border-color: #ff2a85;
+    background-color: #241438;
+  }
+
+  /* Pure CSS drawer menu for mobile via :target */
+  .x4v7-mobile-drawer {
+    display: none;
+  }
+  .x4v7-mobile-drawer:target {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+  }
+
+  .x4v7-drawer-scrim {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .x4v7-drawer-panel {
+    position: relative;
+    width: 280px;
+    max-width: 80%;
+    background-color: #12091d;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 101;
+  }
+
+  .x4v7-floating-chat {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    width: 52px;
+    height: 52px;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    z-index: 40;
+    transition: transform 0.2s ease;
+  }
+  .x4v7-floating-chat:hover {
+    transform: scale(1.08);
+  }
+}

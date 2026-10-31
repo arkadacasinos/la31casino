@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://la31casino.vercel.app/sitemap.xml
