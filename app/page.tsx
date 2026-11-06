@@ -1,5 +1,5 @@
 export default function HomePage() {
-  const REF_URL = 'https://copper-ray.com/?serial=61365830&creative_id=9330'
+  const REF_URL = 'https://lunar-silver-glow.com/?serial=61365830&creative_id=9330'
 
   return (
     <div className="min-h-screen flex flex-col bg-[#0b0611] text-white">
